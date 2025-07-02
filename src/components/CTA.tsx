@@ -1,9 +1,10 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
   return (
-    <section className="section-padding bg-gradient-to-br from-accent/5 to-blue-500/5">
+    <section className="section-padding bg-gradient-to-br from-blue-50/30 to-purple-50/30">
       <div className="container mx-auto px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -16,12 +17,14 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 text-lg font-medium transition-all duration-300 hover:shadow-lg"
-            >
-              Start your free trial
-            </Button>
+            <Link to="/auth">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:shadow-lg"
+              >
+                Start your free trial
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="lg" 

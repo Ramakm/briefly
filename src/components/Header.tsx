@@ -1,39 +1,50 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-navbar">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="font-bold text-xl">
+            <Link to="/" className="font-bold text-xl">
               <span className="gradient-text">Briefly</span>
-            </div>
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <Link to="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
               Features
-            </a>
-            <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            </Link>
+            <Link to="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
               How it works
-            </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            </Link>
+            <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
               Pricing
-            </a>
+            </Link>
+            <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              About
+            </Link>
+            <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              Blog
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
-              Sign in
-            </Button>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Get started
-            </Button>
+            <Link to="/auth">
+              <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
+                Sign in
+              </Button>
+            </Link>
+            <Link to="/auth">
+              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                Get started
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -49,24 +60,34 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
-            <nav className="flex flex-col space-y-4">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+          <div className="md:hidden py-4 animate-fade-in glass-card rounded-lg mt-2 mx-4">
+            <nav className="flex flex-col space-y-4 px-4">
+              <Link to="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 Features
-              </a>
-              <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              </Link>
+              <Link to="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 How it works
-              </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              </Link>
+              <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 Pricing
-              </a>
+              </Link>
+              <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+                About
+              </Link>
+              <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+                Blog
+              </Link>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="justify-start">
-                  Sign in
-                </Button>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground justify-start">
-                  Get started
-                </Button>
+                <Link to="/auth">
+                  <Button variant="ghost" className="justify-start">
+                    Sign in
+                  </Button>
+                </Link>
+                <Link to="/auth">
+                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white justify-start">
+                    Get started
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>

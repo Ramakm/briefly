@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 240 3% 97%;
     --muted-foreground: 240 4% 46%;
 
-    --accent: 262 83% 58%;
+    --accent: 210 100% 70%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -35,7 +35,7 @@ All colors MUST be HSL.
 
     --border: 240 4% 91%;
     --input: 240 4% 91%;
-    --ring: 262 83% 58%;
+    --ring: 210 100% 70%;
 
     --radius: 0.75rem;
 
@@ -68,7 +68,7 @@ All colors MUST be HSL.
     --muted: 240 4% 15%;
     --muted-foreground: 240 5% 65%;
 
-    --accent: 262 83% 58%;
+    --accent: 210 100% 70%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 63% 31%;
@@ -76,7 +76,7 @@ All colors MUST be HSL.
 
     --border: 240 4% 15%;
     --input: 240 4% 15%;
-    --ring: 262 83% 58%;
+    --ring: 210 100% 70%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -101,11 +101,26 @@ All colors MUST be HSL.
   html {
     scroll-behavior: smooth;
   }
+
+  /* Cursor circle effect */
+  .cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 30%, transparent 70%);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  }
 }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-accent to-blue-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent;
   }
   
   .card-hover {
@@ -114,5 +129,21 @@ All colors MUST be HSL.
   
   .section-padding {
     @apply py-20 md:py-32;
+  }
+
+  .glass-card {
+    @apply bg-white/20 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+
+  .glass-navbar {
+    @apply bg-white/70 backdrop-blur-md border-b border-white/20;
+  }
+
+  .dark .glass-card {
+    @apply bg-black/20 backdrop-blur-lg border border-white/10;
+  }
+
+  .dark .glass-navbar {
+    @apply bg-black/70 backdrop-blur-md border-b border-white/10;
   }
 }

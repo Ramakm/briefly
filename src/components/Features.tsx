@@ -44,7 +44,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="section-padding bg-muted/30">
+    <section id="features" className="section-padding bg-gradient-to-br from-blue-50/50 to-purple-50/50">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -60,12 +60,12 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="card-hover border-border bg-card/50 backdrop-blur-sm"
+              className="card-hover glass-card"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-                  <feature.icon className="w-6 h-6 text-accent" />
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                  <feature.icon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">
