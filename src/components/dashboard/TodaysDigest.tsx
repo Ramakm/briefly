@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Clock, Calendar } from "lucide-react" // Added Calendar to imports
+import { Clock, Calendar } from "lucide-react"
 
 const TodaysDigest = () => {
   const digestData = {
