@@ -21,7 +21,7 @@ const Hero = () => {
             <Link to="/auth">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg"
+                className="gradient-text bg-transparent border border-border hover:bg-muted/50 px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg"
               >
                 Start free trial
               </Button>
@@ -45,8 +45,8 @@ const Hero = () => {
             <div className="glass-card rounded-2xl p-8 shadow-2xl">
               <div className="bg-gradient-to-br from-orange-50/50 to-yellow-50/50 rounded-xl p-6 min-h-[300px] flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop" 
-                  alt="Email dashboard interface showing organized inbox"
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop" 
+                  alt="Email management dashboard showing organized inbox with AI-powered categorization"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>

@@ -20,7 +20,7 @@ const CTA = () => {
             <Link to="/auth">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:shadow-lg"
+                className="gradient-text bg-transparent border border-border hover:bg-muted/50 px-8 py-4 text-lg font-medium transition-all duration-300 hover:shadow-lg"
               >
                 Start your free trial
               </Button>

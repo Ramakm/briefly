@@ -14,37 +14,37 @@ const features = [
     icon: Clock,
     title: "Daily Digest",
     description: "Get a personalized summary of your most important emails, delivered every morning at your preferred time.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop"
   },
   {
     icon: FileText,
     title: "Smart Categorization",
     description: "AI automatically organizes your emails by importance, urgency, and topic so you never miss what matters.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=200&fit=crop"
   },
   {
     icon: LayoutDashboard,
     title: "Clean Dashboard",
     description: "Beautiful, distraction-free interface that shows you exactly what you need to know at a glance.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
   },
   {
     icon: MessageSquare,
     title: "Context Preservation",
     description: "Keep full context with smart threading and conversation summaries that save you time.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop"
   },
   {
     icon: Users,
     title: "Team Insights",
     description: "Share curated digests with your team and stay aligned on important communications.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop"
   },
   {
     icon: Star,
     title: "Priority Detection",
     description: "Advanced AI learns your patterns to surface the emails that truly need your attention.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=200&fit=crop"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
   }
 ];
 

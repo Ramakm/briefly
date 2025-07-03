@@ -6,6 +6,14 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-navbar">
       <div className="container mx-auto px-6 lg:px-8">
@@ -17,12 +25,18 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <button 
+              onClick={() => scrollToSection('features')} 
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               Features
-            </Link>
-            <Link to="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+            </button>
+            <button 
+              onClick={() => scrollToSection('how-it-works')} 
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               How it works
-            </Link>
+            </button>
             <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
               Pricing
             </Link>
@@ -41,7 +55,7 @@ const Header = () => {
               </Button>
             </Link>
             <Link to="/auth">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+              <Button className="gradient-text bg-transparent border border-border hover:bg-muted/50">
                 Get started
               </Button>
             </Link>
@@ -62,12 +76,18 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in glass-card rounded-lg mt-2 mx-4">
             <nav className="flex flex-col space-y-4 px-4">
-              <Link to="#features" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              <button 
+                onClick={() => scrollToSection('features')} 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-left"
+              >
                 Features
-              </Link>
-              <Link to="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => scrollToSection('how-it-works')} 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-left"
+              >
                 How it works
-              </Link>
+              </button>
               <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 Pricing
               </Link>
@@ -84,7 +104,7 @@ const Header = () => {
                   </Button>
                 </Link>
                 <Link to="/auth">
-                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white justify-start">
+                  <Button className="gradient-text bg-transparent border border-border hover:bg-muted/50 justify-start">
                     Get started
                   </Button>
                 </Link>

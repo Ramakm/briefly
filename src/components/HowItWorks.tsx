@@ -4,19 +4,19 @@ const steps = [
     number: "01",
     title: "Connect your inbox",
     description: "Link your email accounts in under 2 minutes. We support Gmail, Outlook, and all major providers.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop"
   },
   {
     number: "02", 
     title: "AI learns your patterns",
     description: "Our AI analyzes your email habits, priorities, and communication patterns to understand what matters to you.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop"
   },
   {
     number: "03",
     title: "Receive your digest",
     description: "Get a beautifully formatted daily summary with the most important emails, action items, and insights.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop"
   }
 ];
 
