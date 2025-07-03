@@ -110,7 +110,7 @@ All colors MUST be HSL.
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 30%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 154, 0, 0.1) 0%, rgba(255, 206, 84, 0.05) 30%, transparent 70%);
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
@@ -120,7 +120,7 @@ All colors MUST be HSL.
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-600 bg-clip-text text-transparent;
   }
   
   .card-hover {

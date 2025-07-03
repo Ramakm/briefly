@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-blue-50/30 via-white to-purple-50/30">
+    <section className="pt-32 pb-20 px-6 lg:px-8 bg-gradient-to-br from-orange-50/30 via-white to-yellow-50/30">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -21,7 +21,7 @@ const Hero = () => {
             <Link to="/auth">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg"
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white px-8 py-3 text-lg font-medium transition-all duration-300 hover:shadow-lg"
               >
                 Start free trial
               </Button>
@@ -43,19 +43,16 @@ const Hero = () => {
         <div className="animate-slide-in">
           <div className="relative mx-auto max-w-4xl">
             <div className="glass-card rounded-2xl p-8 shadow-2xl">
-              <div className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-xl p-6 min-h-[300px] flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full"></div>
-                  </div>
-                  <p className="text-muted-foreground">
-                    Beautiful dashboard preview coming soon
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-orange-50/50 to-yellow-50/50 rounded-xl p-6 min-h-[300px] flex items-center justify-center">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop" 
+                  alt="Email dashboard interface showing organized inbox"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
             </div>
-            <div className="absolute -top-4 -left-4 w-8 h-8 bg-blue-500/20 rounded-full blur-sm"></div>
-            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-purple-500/20 rounded-full blur-sm"></div>
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-orange-500/20 rounded-full blur-sm"></div>
+            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-yellow-500/20 rounded-full blur-sm"></div>
           </div>
         </div>
 
